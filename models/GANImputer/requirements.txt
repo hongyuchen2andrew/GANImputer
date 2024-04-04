@@ -1,6 +1,0 @@
-tensorflow
-keras
-loguru
-missingpy
-tensorflow-addons
-pandas
