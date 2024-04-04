@@ -4,7 +4,7 @@
 
 # GANImputer
 ## Introduction of GANImputer
-GANImputer is a novel missing data imputation algorithm based on Generative Adversarial Network(GAN), which consists of a discriminator and a generator. In this setup, the discriminator is formulated as a multi-class classifier, different from the binary classifier in the original GAN. The discriminator is trained to maximize the multi-class classification error and the generator is trained to minimize the multi-class classification error. After the adversarial training, the generator is fixed and the latent variables are optimized. Finally, the generator and latent variables are fine-tuned as a whole to impute the missing values.
+GANImputer is a novel missing data imputation algorithm based on Generative Adversarial Network(GAN), which consists of a discriminator and a generator. In this setup, the discriminator is formulated as a multi-class classifier, different from the binary classifier in the original GAN. The discriminator is trained to maximize the multi-class classification error and the generator is trained to minimize the multi-class classification error. After the adversarial training, the generator is fixed and the latent variables are optimized. Finally, the generator and latent variables are fine-tuned as a whole to impute the missing values. Code of our model and other related state-of-the-art (SOTA) algorithms mentioned above can be found [here](https://github.com/hongyuchen2andrew/GANImputer/blob/main/models).
 
 ## Overall Algorithms
 ### Stage 1: Adversarial Learning for Generator
@@ -21,4 +21,4 @@ Assume for each epoch, $B$ samples are randomly selected and latent variables ar
 The experimental results on five benchmark datasets at different missing rates, followed by downstream tasks, show that our GANImputer can outperform strong baselines such as [GAIN](https://arxiv.org/pdf/1806.02920.pdf), [MIWAE](https://arxiv.org/pdf/1812.02633.pdf), and [Singhorn](https://arxiv.org/pdf/2002.03860.pdf). We also apply GANImputer to the Tennessee Eastman process [24], which further demonstrates the effectiveness of our method.
 
 Details of the model structure and results of the experiments can be found in our paper [GANImputer](https://github.com/hongyuchen2andrew/GANImputer/blob/main/GANImputer.pdf).
-Code of our model and other state-of-the-art (SOTA) algorithms mentioned above can be found [here](https://github.com/hongyuchen2andrew/GANImputer/blob/main/models).
+
